@@ -42,8 +42,9 @@
 		font-weight:normal;
 		font-family: 'PT Sans',sans-serif;
 		line-height:140% !important;
-		color:#222222;
+		color:#1A4255;
 	}
+	
 	h1{
 		font-size: 22px; 
 	}
@@ -74,6 +75,9 @@
 	h6 a:hover{
 		color:#fff !important;
 	}
+	.service_paragraph{ 
+		color:#1A4255;
+	}
 	a { 
 		color:#222222;
 		padding: 0;
@@ -94,15 +98,24 @@
 		display:block;
 		font-style:italic;
 	}
-	a.navbar-brand {
-		background: url(images/logo.png) no-repeat scroll left top rgba(0, 0, 0, 0);
-		color: #222222 !important;
-		font-size: 35px;
-		font-weight: 400;
-		margin-top: 0;
-		padding-left: 55px !important;
-		line-height: 36px;
-	}
+a.navbar-brand {
+	background-image: url('https://res.cloudinary.com/kakani7/image/upload/v1750923624/MSI/LOGIN_PAGE/i1qqamelymdigjof3tpf.jpg');
+	background-repeat: no-repeat;
+	background-attachment: scroll;
+	background-position: left top;
+	background-color: rgba(0, 0, 0, 0);
+	background-size: 50px 50px; /* Adjust these values */
+
+	
+	font-size: 35px;
+	font-weight: 400;
+	margin-top: 0;
+	padding-left: 55px !important;
+	line-height: 36px;
+}
+
+
+
 	a.remove{
 		display:block;
 		height:18px;
@@ -308,7 +321,7 @@
 	}
 	#header-style-1 .yamm-fw .dropdown-menu li a:before {
 		font-family: "FontAwesome";
-		content: "\f105";
+		content: "/f105";
 		font-size: 13px;
 		padding-right:5px;
 	}
@@ -351,7 +364,7 @@
 	}
 	#header-style-1 .navbar-nav > li > a {
 		text-transform:uppercase;	
-		color:#222222;
+		color:#008281;
 		font-family: 'PT Sans',sans-serif;
 		padding: 7px 18px;
 		margin-top:8px;
@@ -382,7 +395,7 @@
 		border-bottom: 0;  
 	}    
 	#topbar {
-		background:#fff;
+		background:#1A4255;
 		z-index:99;
 		position:relative;
 		border-bottom:1px solid #f2f2f2;
@@ -394,7 +407,7 @@
 		overflow:hidden
 	}
 	.social-icons span a {
-		border-left:1px solid #f2f2f2;
+		border-left:1px solid #1A4255;
 		font-size:14px;
 		text-align:center;
 		width:40px;
@@ -421,7 +434,7 @@
 		color:#888888;
 	}
 	#topbar .social-icons span.last a {
-		border-right:1px solid #f2f2f2;
+		border-right:1px solid #1A4255;
 	}
 	#topbar .topbar-email,
 	#topbar .topbar-phone,
@@ -430,8 +443,8 @@
 		float:left;
 		padding:0 15px;
 		line-height:42px;
-		border-right:1px solid #f2f2f2;
-		border-left:1px solid #f2f2f2;
+		border-right:1px solid #1A4255;
+		border-left:1px solid #1A4255;
 	}
 	#topbar .topbar-phone,
 	#topbar .topbar-email,
@@ -489,7 +502,7 @@
 	#footer-style-2,
 	#footer-style-3,
 	#footer-style-1 {
-		background-color:#121214;
+		background-color:#1A4255;
 		padding:40px 0;
 		display:block;
 		position:relative;
@@ -727,7 +740,7 @@
 		color: #4f4f4f;
 		padding-left:0 !important;
 		font-family: 'FontAwesome';
-		content: "\f099";
+		content: "/f099";
 		padding:10px;
 		vertical-align: text-top;
 		font-size:21px;
@@ -847,13 +860,13 @@
 		text-align:center;
 	}
 	.testimonial-widget .testimonial .lead:after {
-		content: "\f10e" !important;
+		content: "/f10e" !important;
 	}
 	.testimonial-widget .testimonial .lead:after,
 	.testimonial-widget .testimonial .lead:before {
 		color: #222222;
 		font-family: 'FontAwesome';
-		content: "\f10d";
+		content: "/f10d";
 		padding:10px;
 		vertical-align: text-top;
 		font-size:21px;
@@ -1425,7 +1438,7 @@
 		padding: 5px 14px;
 	}
 	.pager li > a:hover, .pager li > span:hover {
-		background-color:#222;
+		background-color:#1A4255;
 		color:#fff;
 	}
 	.product_details ul li a {
@@ -2007,10 +2020,10 @@
 		color: #fff;
 	}
 	.tp-leftarrow:before {
-		content: '\e824';
+		content: '/e824';
 	}
 	.tp-rightarrow:before {
-		content: '\e825';
+		content: '/e825';
 	}
 	.tparrows.tp-rightarrow:before {
 		margin-left: 1px;
@@ -2159,7 +2172,7 @@
 		right:0;
 		top:0;
 		font-family: 'FontAwesome';
-		content: "\f002";
+		content: "/f002";
 	}
 	.grey-wrapper .pricing_detail {
 		background:#fff;
@@ -2280,7 +2293,7 @@
 		border-right:0 solid #efefef !important;
 	}
 	.panel-title:after {
-		content: "\f078";
+		content: "/f078";
 		color: #292723;
 		float:right;
 		display: block;
@@ -2466,7 +2479,7 @@
 		padding:9px 10px;
 	}
 	.check li:before {
-		content: "\f00c";
+		content: "/f00c";
 		font-family: "FontAwesome";
 		font-size: 16px;
 		left: 0;
@@ -2724,7 +2737,7 @@
 		border-radius:500px !important;
 	}
 	.service-icon i {
-		color:#666666;
+		color:#008281;
 	}
 	.little-padding {
 		padding:5px 0 0 !important;
@@ -3221,7 +3234,7 @@
 	}
 	.quote-post:after {
 		font-family: 'FontAwesome';
-		content: "\f10e";
+		content: "/f10e";
 		padding-right:20px;
 		right:0;
 		position:absolute;
@@ -3645,6 +3658,8 @@
 	#topbar .social-icons span a:hover {
 		background-color:#f7c221;
 	}
+
+
 	.flex-direction-nav a,
 	.rsUni .rsThumb.rsNavSelected .thumbIco,
 	.custom-overlay {
