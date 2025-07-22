@@ -33,6 +33,7 @@
 		line-height:175%;		
 		background-color:#fff;
 		background-repeat:repeat;
+		
 	}
 	h1,h2,h3,h4,h5,h6{ 
 		letter-spacing:0px;
@@ -99,7 +100,7 @@
 		font-style:italic;
 	}
 a.navbar-brand {
-	background-image: url('https://res.cloudinary.com/kakani7/image/upload/v1750923624/MSI/LOGIN_PAGE/i1qqamelymdigjof3tpf.jpg');
+	background-image: url('https://res.cloudinary.com/kakani7/image/upload/v1753160357/MSI/Untitled_design_cxvuux.svg');
 	background-repeat: no-repeat;
 	background-attachment: scroll;
 	background-position: left top;
@@ -286,12 +287,67 @@ a.navbar-brand {
 	.header_center .logo_center {
 		padding:20px 0 30px !important
 	}
-	#header-style-1 {
-		padding:24px 0;
-		background-color:#ffffff;
-		background: rgba(255, 255, 255, 1);
-		border-bottom:1px solid #f2f2f2;
+	.video-hero {
+		position: relative;
+		width: 100%;
+		height: 100vh; /* full screen */
+		overflow: hidden;
 	}
+	.video-hero video {
+		position: absolute;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		object-fit: cover;
+		z-index: 1; /* behind header */
+	}
+	#topbar {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		background:#1A4255;
+		z-index:999;
+		border-bottom:1px solid #f2f2f2;
+		font-family: 'PT Sans',sans-serif;
+	}
+	@media (max-width: 768px) {
+		#topbar .container {
+			display: flex;
+			flex-direction: column;
+			align-items: center;
+		}
+		
+		.navbar-header, .navbar-collapse {
+			float: none !important;
+			text-align: center;
+		}
+
+		.navbar-toggle {
+			float: none !important;
+			margin: 10px auto;
+		}
+	}
+	#header-style-1 {
+		position: fixed;
+		top: 40px; /* header appears below the topbar */
+		width: 100%;
+		z-index: 1000;
+		padding: 24px 0;
+		background: transparent;
+		transition: background-color 0.3s ease, top 0.3s ease;
+		border-bottom: none;
+	}
+	#header-style-1.scrolled {
+    top: 0; /* move to top when topbar scrolls away */
+    background-color: white !important;
+    border-bottom: 1px solid #efefef;
+    box-shadow: 0 2px 4px rgba(0,0,0,0.1);
+	}
+	
+	
+
 	#header-style-1 .navbar-default {
 		background-color:transparent;
 		background: transparent;
@@ -395,13 +451,7 @@ a.navbar-brand {
 	#header-style-1 .dropdown-menu li:last-child{
 		border-bottom: 0;  
 	}    
-	#topbar {
-		background:#1A4255;
-		z-index:99;
-		position:relative;
-		border-bottom:1px solid #f2f2f2;
-		font-family: 'PT Sans',sans-serif;
-	}
+	
 	.social-icons {
 		display: flex;
 		flex-wrap: wrap;
@@ -3879,3 +3929,5 @@ a.navbar-brand {
 	.videooverlay .general-title h2 {
 		color:#fff;
 	}
+
+	

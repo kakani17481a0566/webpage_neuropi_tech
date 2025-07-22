@@ -93,7 +93,7 @@
                         <span class="icon-bar"></span>
                     </button>
                     
-                    <a href="index.html" class="navbar-brand" style="font-family: 'Lato', sans-serif;">NEUROPI TECH</a>
+                    <a href="index.html" class="navbar-brand" style="font-family: 'Lato', sans-serif;">NEUROPI</a>
 
         		</div><!-- end navbar-header -->
                 
@@ -116,13 +116,14 @@
 	</header><!-- end header-style-1 -->
 	
    
-    <div class="slider-wrapper">
-        <div style="width:100vw; border:1px solid #ccc; background:#fafbfd; margin:0; padding:0;">
-        <img src="https://res.cloudinary.com/dhzvc7ml0/image/upload/v1753092350/premium_photo-1681487548276-48a2c640ade9_zldj3q.jpg" 
-        alt="Machine Learning Wallpaper" 
-        style="width:100%; height:auto; display:block;">
-        </div>    
-    </div>
+    <!-- Hero Section with Video in Background -->
+<div class="video-hero">
+  <video autoplay muted loop playsinline>
+    <source src="https://res.cloudinary.com/kakani7/video/upload/v1753160588/MSI/AdobeStock_1205291813_Video_HD_Preview_adxqvo.mp4" type="video/mp4">
+    Your browser does not support the video tag.
+  </video>
+</div>
+
     
     <!-- end slider-wrapper -->
 
@@ -674,6 +675,32 @@
 		});
 	});
   </script>
+
+  
+  
+ <!-- Bootstrap and jQuery scripts (if not already added) -->
+<script src="https://code.jquery.com/jquery-3.6.0.min.js"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/3.4.1/js/bootstrap.min.js"></script>
+
+<!-- Scroll behavior script -->
+<script>
+  window.addEventListener('scroll', function () {
+    const header = document.getElementById('header-style-1');
+    const topbar = document.getElementById('topbar');
+    const video = document.querySelector('.video-hero');
+    const videoBottom = video.getBoundingClientRect().bottom;
+
+    if (window.scrollY > 50) {
+      topbar.style.display = 'none';
+      header.classList.add('scrolled');
+    } else {
+      topbar.style.display = 'block';
+      header.classList.remove('scrolled');
+    }
+  });
+</script>
+</body>
+</html>
 
 
   </body>
