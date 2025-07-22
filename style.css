@@ -104,7 +104,7 @@ a.navbar-brand {
 	background-attachment: scroll;
 	background-position: left top;
 	background-color: rgba(0, 0, 0, 0);
-	background-size: 50px 50px; /* Adjust these values */
+	background-size: 55px 50px; /* Adjust these values */
 
 	
 	font-size: 35px;
@@ -230,9 +230,10 @@ a.navbar-brand {
 		min-height:inherit;
 		z-index: 999;
 		background:#ffffff;
-		background: rgba(255,255,255,1);
+		background: #ffffff;
 		border-bottom: 1px solid #efefef;
 	}	
+	
 	#header-style-1.affix .navbar {
 		margin-top:0px;
 	}
@@ -292,8 +293,8 @@ a.navbar-brand {
 		border-bottom:1px solid #f2f2f2;
 	}
 	#header-style-1 .navbar-default {
-		background-color:#ffffff;
-		background: rgba(255, 255, 255, 1);
+		background-color:transparent;
+		background: transparent;
 		border-color: rgba(0, 0, 0, 0);
 	}
 	#header-style-1 .navbar-brand {
@@ -402,9 +403,11 @@ a.navbar-brand {
 		font-family: 'PT Sans',sans-serif;
 	}
 	.social-icons {
+		display: flex;
+		flex-wrap: wrap;
 		padding:0;
-		display:block; 
-		overflow:hidden
+		gap:4px;
+		justify-content: flex-start;
 	}
 	.social-icons span a {
 		border-left:1px solid #1A4255;
@@ -415,7 +418,7 @@ a.navbar-brand {
 		line-height:42px;
 		overflow:hidden;
 		display:block;
-		float:left
+		float:none;
 	}
 	#header-style-1 .navbar-nav > li > a:hover,
 	#header-style-1 .navbar-nav > li > a:focus,
@@ -434,13 +437,13 @@ a.navbar-brand {
 		color:#888888;
 	}
 	#topbar .social-icons span.last a {
-		border-right:1px solid #1A4255;
+		border-right:5px solid #1A4255;
 	}
 	#topbar .topbar-email,
 	#topbar .topbar-phone,
 	#topbar .topbar-login,
 	#topbar .topbar-cart {
-		float:left;
+		float:right;
 		padding:0 15px;
 		line-height:42px;
 		border-right:1px solid #1A4255;
